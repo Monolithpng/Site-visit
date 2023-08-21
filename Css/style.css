@@ -1,3 +1,7 @@
+:root {
+    --main-dark: rgb(246, 8, 8);
+  }
+  
 *{
     margin: 0;
     box-sizing: border-box;
