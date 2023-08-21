@@ -26,7 +26,8 @@ wavesurfer.init({
 
 
 //загружаем нужную песню
-wavesurfer.load("sound.mp3");
+wavesurfer.load("./sound.mp3");
+console.log(wavesurfer)
 
 //play and pause a player
 playPause.addEventListener("click", function (e) {
