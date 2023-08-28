@@ -1,4 +1,9 @@
+
 @import url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css");
+:root {
+    --main-dark: rgb(0, 0, 0);
+    --main-gray: #1a1a1a;
+}
 *{
     margin: 0;
     box-sizing: border-box;
@@ -9,7 +14,7 @@
     margin: 0 auto;
 }
 .header{
-    background-color: black;
+    background-color: var(--main-dark);
     padding-top: 36px;
     padding-bottom: 200px;
 }
@@ -27,7 +32,7 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: #1a1a1a;
+    color: var(--main-gray);
     font-weight: bold;
 }
 .navigation-holder{
@@ -80,7 +85,7 @@
     justify-content: space-evenly;
     align-items: flex-start;
     text-decoration: none;
-    color: #1a1a1a;
+    color: var(--main-gray);
     font-weight: bold;
     border-radius: 6px;
 }
