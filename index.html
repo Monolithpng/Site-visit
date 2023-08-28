@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Site-Visit</title>
     <link rel="stylesheet" href="./Css/style.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -60,23 +62,39 @@
                             consequat.Duis aute irure dolor in.
                         </p>
                     </div>
-
-                    <div class="audio-block">
-                        <img src="./img/man-avatar.png" alt="">
-                        <div class="audio-container">
-                            <img src="./img/audio.png" class="audio-track" alt="">
-                            <a href="#" class="play-btn">
-                                <img src="./img/icons/play.svg" alt="">
-                            </a>
+                    <div class="audio-holder">
+                        <div class="audio-block">
+                            <img src="./img/man-avatar.png" alt="">
+                            <div class="audio-container">
+                                <div class="audio-detail">
+                                    <div class="control">
+                                        <i class="fi-rr-play" id="playPause"></i>
+                                    </div>
+                                    <div id="waveform"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="audio-author">
+                            <div>
+                                <h2 class="about-title">Testimonial</h2>
+                                <span class="about-subtitle">Tom Hope</span>
+                            </div>
+                            <div class="time">
+                                <span id="current">0:00</span>
+                                <span id="duration">0:00</span>
+                            </div>
                         </div>
                     </div>
-
-                    <h2 class="about-title">Testimonial</h2>
-                    <span class="about-subtitle">Tom Hope</span>
                 </div>
             </section>
         </div>
     </header>
 
+
+
+
+    <!-- <script src="./wavesurfer.js"></script> -->
+    <script type="module" src="./media.js"></script>
 </body>
+
 </html>

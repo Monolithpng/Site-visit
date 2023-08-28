@@ -1,3 +1,5 @@
+import WaveSurfer from 'https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.esm.js'
+
 duration = document.querySelector("#duration");
 current = document.querySelector("#current");
 playPause = document.querySelector("#playPause");
@@ -13,15 +15,15 @@ var timeCalculator = function (value) {
     return minute + ":" + second;
 };
 
-var wavesurfer = Object.create(WaveSurfer);
 
-wavesurfer.init({
-    container: "#wave",
-    waveColor: "#7D7D7D", // тут можно поменять фоновый цвет плеера
-    progressColor: "#D5A216", // тут можно поменять цвет заполнения
-    height: 48, // высота плеера
-    scrollParent: false
-});
+
+const wavesurfer = WaveSurfer.create({
+    container: '#waveform',
+    waveColor: '#4F4A85',
+    progressColor: '#383351',
+    // url: '/audio.mp3',
+  })
+  
 
 
 
